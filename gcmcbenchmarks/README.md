@@ -22,7 +22,7 @@ This package requires:
 To install and use the Python package run the following commands
 
 ```
-git clone https://bitbucket.org/sarkisovgroup/gcmcbenchmarks.git
+git clone https://github.com/SarkisovGroup/gcmcbenchmarks.git
 cd gcmcbenchmarks
 pip install -r requirements.txt .
 ```
