@@ -1,0 +1,18 @@
+Music Simulation Notes
+----------------------
+
+Simulations were perfomed using ?????
+
+
+Potential maps
+--------------
+
+All simulations using Music first require that the potential map is created.
+These are created by running the "simulation" in pmaps_krista directory.
+
+Changes made
+------------
+
+Compiling with ifort 16.0.0 20150815 gave an error about a variable
+called 'vchange' conflicting with the module 'vchange'.
+The module vchange was renamed to mod_vchange to work around this

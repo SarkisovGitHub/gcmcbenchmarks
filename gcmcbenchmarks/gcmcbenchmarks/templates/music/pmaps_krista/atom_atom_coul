@@ -1,0 +1,42 @@
+# Atom-Atom interaction file for CO2 (UFF parameter)
+
+Probe          Hydrogen       COUL 
+Probe          Oxygen         COUL
+Probe          Copper         COUL
+Probe          Carbon         COUL 
+Probe          Zinc           COUL
+Probe          Nickel         COUL
+Probe          Magnesium      COUL
+Probe          Vanadium       COUL
+
+Oxygen          Oxygen       OFF
+Nitrogen        Nitrogen     OFF
+Carbon          Carbon       OFF
+Hydrogen        Hydrogen     OFF
+Copper          Copper       OFF
+Nickel          Nickel       OFF
+Vanadium        Vanadium     OFF
+Magnesium       Magnesium    OFF
+Oxygen          Carbon       OFF
+Oxygen          Nitrogen     OFF
+Oxygen          Hydrogen     OFF
+Oxygen          Copper       OFF
+Oxygen          Nickel       OFF
+Oxygen          Vanadium     OFF
+Oxygen          Magnesium    OFF
+Nitrogen        Carbon       OFF
+Nitrogen        Hydrogen     OFF
+Nitrogen        Copper       OFF
+Nitrogen        Nickel       OFF
+Nitrogen        Vanadium     OFF
+Nitrogen        Magnesium    OFF
+Carbon          Hydrogen     OFF
+Carbon          Copper       OFF
+Carbon          Nickel       OFF
+Carbon          Vanadium     OFF
+Carbon          Magnesium    OFF
+Hydrogen        Copper       OFF
+Hydrogen        Nickel       OFF
+Hydrogen        Vanadium     OFF
+Hydrogen        Magnesium    OFF
+

@@ -1,0 +1,11 @@
+# Molecule-Molecule interaction file for CO2 Carbon map generation in IRMOF1 simulation
+
+Oxygen_M   Oxygen_M   COUL   OFF
+Oxygen_M   Oxygen_M   NCOUL  BASIC   LJ   FAST
+
+Oxygen_M   IRMOF1      COUL   OFF
+IRMOF1     Oxygen_M   NCOUL  BASIC   LJ   FAST
+
+IRMOF1     IRMOF1      COUL   OFF
+IRMOF1     IRMOF1      NCOUL  OFF
+

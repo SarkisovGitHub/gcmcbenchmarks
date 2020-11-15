@@ -1,0 +1,23 @@
+package:
+  name: gcmcbenchmarks
+  version: 1.0.0
+
+source:
+  path: ../
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+    - docopt
+    - numpy
+    - pandas
+    - scipy
+    - statsmodels
+
+test:
+  imports:
+    - gcmcbenchmarks

@@ -1,0 +1,11 @@
+# Molecule-Molecule interaction file for CO2 electrostatic map generation in IRMOF1 simulation
+
+IRMOF1    IRMOF1    COUL    OFF
+IRMOF1    IRMOF1    NCOUL   OFF
+
+Probe     IRMOF1    COUL    SUM FAST EWALD KMAX@7.0 KAPPA@6.4 LOCUT@1e-10
+Probe     IRMOF1    NCOUL   OFF
+
+Probe     Probe     COUL    OFF
+Probe     Probe     NCOUL   OFF
+

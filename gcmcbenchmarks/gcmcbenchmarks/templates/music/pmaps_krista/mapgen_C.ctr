@@ -1,0 +1,60 @@
+------ General Information ------------------------------------------
+Carbon-IRMOF1 map gen
+1               # No. of iterations
+1               # No. of steps between writes to output/log file
+1               # No. of steps between writes to crash file
+1               # No. of steps between writes to config. file
+1               # Start numbering simulations from .
+578302019       # Iseeed
+4               # specifies contents of config file,
+Carbon.res      # Restart File to write to
+Carbon.con      # Configuration File
+------ Atomic Types --------------------------------------------------
+5                           # number of atomic types
+           
+Carbon_CO2                  # atom type
+Carbon_CO2.atm              # basic atom info file
+
+Carbon                      # atom type
+Carbon.atm                  # basic atom info file
+
+Oxygen                      # atom type
+Oxygen.atm                  # basic atom info file
+
+Hydrogen                    # atom type
+Hydrogen.atm                # basic atom info file
+
+Zinc                        # atom type
+Zinc.atm                    # basic atom info file
+------ Molecule Types -------------------------------------------------
+2                           # number of sorbate types
+
+Carbon_M                    # sorbate
+Carbon_M.mol                # sorbate coordinates file
+
+IRMOF1                       # sorbate
+IRMOF1.mol                   # sorbate coordinates file
+------ Simulation Cell Information --------------------------------------
+IRMOF1                       # Fundamental cell type
+2, 2, 2                      # No. of unit cells in x, y, z direction
+1, 1, 1                      # (1 = Periodic) in x, y, z
+------ Forcefield Information -------------------------------------------
+BASIC
+SPC
+atom_atom_lj                 # atom-atom interaction file
+mol_mol_C                    # sorbate-sorbate interaction file (optional)
+intra_C                      # intramolecular interactions
+------ Mapmaker Information --------------------------------------------
+1                           # Number of maps to make
+
+IRMOF1                       # Sorbate to map
+Carbon_M                    # Sorbate to probe map with
+NCOUL LJ                    # Interaction type to map
+0.1                         # Approximate grid spacing (Ang)
+100.0                       # High end potential cutoff (kJ/mol)
+AUTO                        # Map filename or AUTO
+------ Configuration Initialization -------------------------------------
+Carbon_M                    # Sorbate_Type
+Molecule NULL               # Source Filename
+IRMOF1                       # Sorbate_Type
+Fixed NULL                  # Source Filename

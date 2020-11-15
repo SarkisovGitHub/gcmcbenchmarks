@@ -1,0 +1,14 @@
+#!/bin/bash
+#$ -R y
+#$-l h_vmem=1G
+#$ -pe sharedmem 1
+#$ -l h_rt=40:00:00
+#$ -j y
+#$ -N MAP
+#$ -cwd
+
+source setpath
+
+./music_mapmaker_4.exe  mapgen_O.ctr >& mapgen_O.log
+./music_mapmaker_4.exe 	mapgen_C.ctr >& mapgen_C.log
+

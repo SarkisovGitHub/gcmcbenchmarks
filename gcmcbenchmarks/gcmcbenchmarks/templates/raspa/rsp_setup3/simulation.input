@@ -1,0 +1,55 @@
+SimulationType                MonteCarlo
+NumberOfCycles                {run_length}
+NumberOfInitializationCycles  0
+PrintEvery                    {save_freq}  # 100 000 steps
+PrintPropertiesEvery          {coords_freq}  # 10 000 steps
+RestartFile                   no
+
+# Restart and crash-recovery
+ContinueAfterCrash              no        # Write a binary file (binary restart.dat). 
+WriteBinaryRestartFileEvery     {coords_freq}       # The output frequency of the crash-recovery file.
+
+Forcefield                    IRMOF-1_K.Walton_FullPot
+CutOffVDW                     25.0
+ChargeMethod                  Ewald
+CutOffChargeCharge            25.832
+EwaldPrecision                1e-6
+
+UseChargesFromCIFFile         yes
+
+Framework 0
+FrameworkName IRMOF-1
+UnitCells 2 2 2
+HeliumVoidFraction 0.78
+ExternalTemperature 208.0
+ExternalPressure  {pressure}
+Movies no
+WriteMoviesEvery    {coords_freq}  # 100 000 steps
+
+# Grids
+NumberOfGrids 0
+#GridTypes C_co2 O_co2
+#SpacingVDWGrid 0.1
+#SpacingCoulombGrid  0.1
+#UseTabularGrid yes
+
+# ComputeDensityHistograms yes
+
+# ComputeNumberOfMoleculesHistogram yes
+# WriteNumberOfMoleculesHistogramEvery 1000
+# NumberOfMoleculesHistogramSize 1000
+# NumberOfMoleculesRange 80
+
+# ComputeEnergyHistogram yes
+# WriteEnergyHistogramEvery 1000
+# EnergyHistogramSize 1000
+# EnergyHistogramLowerLimit -150000
+# EnergyHistogramUpperLimit 0.0
+
+
+Component 0 MoleculeName             CO2
+            TranslationProbability   0.25
+            RotationProbability      0.25
+            SwapProbability          0.50
+            CreateNumberOfMolecules  0
+

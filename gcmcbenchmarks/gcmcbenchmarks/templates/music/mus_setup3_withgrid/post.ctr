@@ -1,0 +1,30 @@
+# this section is required for working with any post code
+#
+#
+------------------------------------------------------------
+   ### Required section ######
+-- Post Processor Information ------------
+GCMC                       # Type of simulation GCMC, NVTMC , MD ....
+CO2.con                    # basename for config files
+1, 2                      # first and last file numbers
+chk.ctr                    # name for new ctrlfile that will regenerated
+IRMOF1.CO2.post             # Base name for output files
+0, 0                      # Percentages of data to skipped at start and end 
+
+
+# The sections below are necessary only if you want the corresponding 
+# analysis performed
+# ---------------- ALL OF THEM ARE OPTINAL ------------------------
+
+
+####    This section is reqd for energy averages in your post code output files
+####    as of now only total enrgies vs sim. step
+------ Post : Energy Average Info -----------------------------------
+{nblocks}       # Number of blocks into which data should be divided for stats
+
+####    This section is reqd for Loading averages in your post code outputfiles
+####    as of now only species loading vs sim. step (for all species)
+------ Post : Loading Average Info -----------------------------------
+{nblocks}       # Number of blocks into which data should be divided for stats
+
+

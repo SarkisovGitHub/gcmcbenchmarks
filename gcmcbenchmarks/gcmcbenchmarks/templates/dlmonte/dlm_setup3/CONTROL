@@ -1,0 +1,31 @@
+GCMC CO2 in IRMOF
+
+use gaspressure
+finish
+
+temperature 208.0 # temp in K
+
+explicit  # use pure Coulomb within cutoff
+ewald prec 1e-6
+
+steps         {run_length}
+equilibration 0
+print         {save_freq}
+stack         {save_freq}
+sample coordinates {coords_freq}
+
+# GCMC optimisation
+acceptmolmoveupdate 10000
+acceptmolmoveratio 0.5
+acceptmolrotupdate 10000
+acceptmolrotratio  0.5
+
+# GCMC moves
+move molecule    1 25
+CO2
+move rotatemol   1 25
+CO2
+move gcinsertmol 1 50 1.0  # atom types, freq, overlap distance
+CO2 {pressure}
+
+start

@@ -1,0 +1,71 @@
+# Run_Name
+species2_mcf_gen
+
+# Sim_Type
+MCF_Gen
+
+# Nbr_Species
+1
+
+# VDW_Style
+lj minimum_image
+
+# Rcutoff_Low
+1.0
+
+# Mixing_Rule
+custom
+Zn_s1  Zn_s1 0.0   0.0
+Zn_s1  O_s1  0.0   0.0
+Zn_s1  C_s1  0.0   0.0
+Zn_s1  H_s1  0.0   0.0
+Zn_s1  O_s2  46.78 3.55
+Zn_s1  C_s2  27.35 3.42
+O_s1   Zn_s1 0.0   0.0
+O_s1   O_s1  0.0   0.0
+O_s1   C_s1  0.0   0.0
+O_s1   H_s1  0.0   0.0
+O_s1   O_s2  61.70 3.04
+O_s1   C_s2  36.07 2.92
+C_s1   Zn_s1 0.0   0.0
+C_s1   O_s1  0.0   0.0
+C_s1   C_s1  0.0   0.0
+C_s1   H_s1  0.0   0.0
+C_s1   O_s2  61.51 3.26
+C_s1   C_s2  35.96 3.32
+H_s1   Zn_s1 0.0   0.0
+H_s1   O_s1  0.0   0.0
+H_s1   C_s1  0.0   0.0
+H_s1   H_s1  0.0   0.0
+H_s1   O_s2  24.59 2.95
+H_s1   C_s2  14.38 2.82
+O_s2   Zn_s1 46.78 3.55
+O_s2   O_s1  61.70 3.04
+O_s2   C_s1  61.51 3.26
+O_s2   H_s1  24.59 2.95
+O_s2   O_s2  79.0  3.05
+O_s2   C_s2  46.18 2.93
+C_s2   Zn_s1 27.35 3.42
+C_s2   O_s1  36.07 2.92
+C_s2   C_s1  35.96 3.32
+C_s2   H_s1  14.38 2.82
+C_s2   O_s2  46.18 2.93
+C_s2   C_s2  27.0  2.80
+!----------------
+
+
+# Charge_Style
+NONE
+
+# Intra_Scaling
+0.0  0.0  0.0  0.0
+
+# Molecule_Files
+../../CO2.mcf 50
+
+# Box_Info
+1
+CUBIC
+30.0 30.0 30.0
+
+END

@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+#$ -S /bin/bash
+#$ -V 
+#$ -o ./output
+#$ -q clx.q
+#$ -N IRMOF1_CO2
+
+cd /home/lsarkiso/CO2_IRMOF1/pmaps
+ulimit -s unlimited
+
+. setpath
+
+# music-4.0_mapmaker mapgen_O.ctr >& mapgen_O.log
+# music-4.0_mapmaker mapgen_C.ctr >& mapgen_C.log
+# music-4.0_mapmaker mapgen_el.ctr >& mapgen_el.log
+
+
+# music-4.0_gcmc gcmc.ctr >& gcmc.log
+# music-4.0_post post.ctr >& post.log

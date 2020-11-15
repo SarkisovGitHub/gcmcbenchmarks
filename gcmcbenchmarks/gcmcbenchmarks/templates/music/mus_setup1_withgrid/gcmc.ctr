@@ -1,0 +1,81 @@
+------ General Information ------------------------------------------
+CO2 in IRMOF1
+{run_length}         # No. of iterations                               
+{coords_freq}        # No. of steps between writes to output/log file  
+{coords_freq}        # No. of steps between writes to crash file       
+{save_freq}          # No. of steps between writes to config. file     
+1                    # Start numbering simulations from .              
+82961226             # Iseed                                           
+3                    # specifies contents of config file,              
+CO2.res              # Restart File to write to
+CO2.con              # Configuration File
+------ Atomic Types --------------------------------------------------
+6                    # number of atomic types
+
+Hydrogen             # atom type
+Hydrogen.atm         # basic atom info file
+
+Carbon               # atom type
+Carbon.atm           # basic atom info file
+
+Carbon_CO2           # atom type
+Carbon_CO2.atm       # basic atom info file
+
+Oxygen               # atom type
+Oxygen.atm           # basic atom info file
+
+Oxygen_CO2           # atom type
+Oxygen_CO2.atm       # basic atom info file
+
+Zinc               # atom type
+Zinc.atm           # basic atom info file
+------ Molecule Types -------------------------------------------------
+2                    # number of sorbate types
+
+CO2                  # sorbate
+CO2.mol              # sorbate coordinates file
+
+IRMOF1                # sorbate
+IRMOF1.mol            # sorbate coordinates file
+------ Simulation Cell Information ------------------------------------
+IRMOF1               # Fundamental cell fill
+2, 2, 2              # No. of unit cells in x, y, z direction
+1, 1, 1              # (1 = Periodic) in x, y, z
+------ Forcefield Information -------------------------------------------
+BASIC                # forcefield identifier
+SPC                  # storage level
+atom_atom_all        # atom-atom interaction file
+mol_mol_all          # sorbate-sorbate interaction file
+intra                # intramolecular interaction file/specification
+------ Ideal Parameters -----------------------------------------------
+Ideal                # Equation of State
+1                    # no. of sorbates
+CO2                  # Sorbate Name
+------ GCMC Information -----------------------------------------------
+1                    # No. of iterations
+208.0                # temperature
+Ideal Parameters     # Tag for the equation of state (NULL = Ideal Gas)
+2                    # No. of simulation points
+{save_freq}          # Block size for statistics
+1                    # no. of sorbates
+          -------------------------
+CO2                  # Sorbate Name
+fugacity.dat         # Fugacity (kPa)(Range) filename
+Null                 # sitemap filename (Null = no sitemap)
+4                    # no of gcmc movetypes
+1.0, 1.0, 1.0, 1.0   # move type weights
+BINSERT              # type of move
+IRMOF1.Carbon_M.LJ.map   # bias map
+208.0                   # bias temperature
+BDELETE              # type of move
+RTRANSLATE           # type of move
+0.2, 1               # Delta Translate, adjust delta option (0=NO, 1=YES)
+RROTATE              # type of move
+0.2, 1               # Delta Translate, adjust delta option (0=NO, 1=YES)
+------ Configuration Initialization -------------------------------------
+CO2                  # Sorbate_Type
+GCMC NULL            # source
+IRMOF1               # Sorbate_Type
+FIXED NULL           # Source Filename
+--------  Main Datafile Information -------------------------------------
+Energy, position, pair_energy # contents of datafile

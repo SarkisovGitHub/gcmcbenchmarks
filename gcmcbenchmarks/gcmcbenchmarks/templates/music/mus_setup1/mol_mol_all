@@ -1,0 +1,11 @@
+# Molecule-Molecule interaction file for CO2 in IRMOF1 simulation
+
+CO2    CO2    COUL   OFF
+CO2    CO2    NCOUL  BASIC  LJ     FAST
+
+IRMOF1  CO2    COUL   OFF
+IRMOF1  CO2    NCOUL  BASIC LJ FAST
+
+IRMOF1  IRMOF1  COUL   OFF
+IRMOF1  IRMOF1  NCOUL  OFF
+

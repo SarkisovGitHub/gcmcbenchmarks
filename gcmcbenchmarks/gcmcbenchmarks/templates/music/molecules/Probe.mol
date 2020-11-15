@@ -1,0 +1,8 @@
+# Generated molecule file
+Molecule_Name: Probe CHARGED
+
+Coord_Info: Listed Cartesian Rigid
+1 # number of atoms in molecule
+1 0.50000 0.50000 0.5000 Probe +1.0 0 0
+
+Molecule_DOF: 3

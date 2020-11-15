@@ -1,0 +1,31 @@
+#!/bin/sh
+########################################
+#                                      #
+# GE job script for ECDF Cluster       #
+#                                      #
+# by Amir H. Farmahini                 #
+#                                      #
+#                                      #
+########################################
+ 
+# Grid Engine options
+ 
+#$ -N grids.LJ
+#$ -cwd
+#$ -l h_rt=48:00:00
+#$ -l h_vmem=8G
+#$ -pe sharedmem 1
+# Initialise environment module
+ . /etc/profile.d/modules.sh
+
+# To prevent segmentation fault 
+ulimit -s unlimited 
+# Error paths
+# -o  
+# -e 
+ 
+# Run the program
+export RASPA_DIR=/exports/csce/eddie/eng/groups/eddie_see_imp_bio/Amir/Results_RASPA/RASPA/simulations
+$RASPA_DIR/bin/simulate
+
+

@@ -1,0 +1,15 @@
+#!/bin/bash
+#$ -R y
+#$-l h_vmem=1G
+#$ -pe sharedmem 1
+#$ -l h_rt=100:00:00
+#$ -j y
+#$ -N CO2
+#$ -cwd
+
+source setpath
+
+
+./music_gcmc_4.exe gcmc.ctr >& gcmc.log
+
+

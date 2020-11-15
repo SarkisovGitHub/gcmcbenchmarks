@@ -1,0 +1,22 @@
+SimulationType  MakeGrid
+
+Forcefield                    IRMOF-1_K.Walton_FullPot
+CutOffVDW                     25.0
+ChargeMethod                  Ewald      #CoulombShifted
+CutOffChargeCharge            25.832
+EwaldPrecision                1e-6
+
+UseChargesFromCIFFile         yes
+
+Framework 0
+FrameworkName IRMOF-1
+UnitCells 2 2 2
+
+NumberOfGrids 2
+GridTypes C_co2 O_co2
+SpacingVDWGrid 0.1
+SpacingCoulombGrid 0.1
+
+
+
+

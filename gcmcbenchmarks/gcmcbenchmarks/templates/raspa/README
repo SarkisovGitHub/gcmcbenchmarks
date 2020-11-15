@@ -1,0 +1,21 @@
+RASPA Simulation notes
+----------------------
+
+
+Simulations were performed using version 2.0 of Raspa
+
+
+Raspa allows a grid to be used to calculate fluid-framework interactions.
+The input files to generate this grid are in the XXXXX directory.
+Benchmarks were performed with and without this grid.
+
+
+Cycles vs Steps
+---------------
+
+Benchmarks were done for a given number of Monte Carlo moves,
+however Raspa measures simulations in terms of Cycles.
+A Cycle consists of a move for every molecule in the system.
+
+To simulate an identical number of moves then.. the number of cycles
+changes depending on the number of molecules (known a priori).

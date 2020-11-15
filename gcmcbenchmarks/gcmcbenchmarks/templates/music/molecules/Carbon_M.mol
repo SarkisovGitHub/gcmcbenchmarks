@@ -1,0 +1,6 @@
+## Ficticious Carbon Molecule
+Molecule_Name: Carbon_M
+
+Coord_Info: Listed Cartesian Rigid
+    1   # Number of atoms in molecule
+    1   0.0000   0.0000   0.0000   Carbon_CO2   0.0  0 0

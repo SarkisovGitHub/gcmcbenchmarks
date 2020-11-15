@@ -1,0 +1,36 @@
+# rules to overwrite
+17
+# pair truncated/shifted tailcorrections
+C_co2  C_co2  truncated  no
+C_co2  O_co2  truncated  no
+C_co2  Zn1    truncated  no
+C_co2  C1     truncated  no
+C_co2  C2     truncated  no
+C_co2  C3     truncated  no
+C_co2  O1     truncated  no
+C_co2  O2     truncated  no
+C_co2  H1     truncated  no
+O_co2  O_co2  truncated  no
+O_co2  Zn1    truncated  no
+O_co2  C1     truncated  no
+O_co2  C2     truncated  no
+O_co2  C3     truncated  no
+O_co2  O1     truncated  no
+O_co2  O2     truncated  no
+O_co2  H1     truncated  no
+# number of defined interactions
+11
+# type type2 interaction
+C_co2 C_     lennard-jones 35.96   3.32
+C_co2 O_     lennard-jones 36.07   2.92
+O_co2 C_     lennard-jones 61.51   3.26
+O_co2 O_     lennard-jones 61.70   3.04
+C_co2 C_co2  lennard-jones 27.00   2.80
+C_co2 O_co2  lennard-jones 46.18   2.93   
+C_co2 Zn1    lennard-jones 27.35   3.42
+C_co2 H1     lennard-jones 14.38   2.82
+O_co2 O_co2  lennard-jones 79.00   3.05
+O_co2 Zn1    lennard-jones 46.78   3.55
+O_co2 H1     lennard-jones 24.59   2.95
+# mixing rules to overwrite
+0

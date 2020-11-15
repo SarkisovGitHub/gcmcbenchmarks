@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ATOMSDIR=../atoms
+MOLSDIR=../molecules
+PMAPDIR=../pmaps
+
+export ATOMSDIR MOLSDIR PMAPDIR

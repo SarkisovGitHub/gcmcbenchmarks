@@ -1,0 +1,6 @@
+## Ficticious Oxygen Molecule, used for map generation in two center Hydrogen model
+Molecule_Name: Oxygen_M
+
+Coord_Info: Listed Cartesian Rigid
+    1   # Number of atoms in molecule
+    1   0.0000   0.0000   0.0000   Oxygen_CO2  0.0  0 0

@@ -1,0 +1,32 @@
+include gcmcbenchmarks/templates/dlmonte/dlm_setup1/*
+include gcmcbenchmarks/templates/dlmonte/dlm_setup2/*
+include gcmcbenchmarks/templates/dlmonte/dlm_setup3/*
+
+include gcmcbenchmarks/templates/cassandra/cas_setup1/*
+include gcmcbenchmarks/templates/cassandra/cas_setup2/*
+include gcmcbenchmarks/templates/cassandra/cas_setup3/*
+
+recursive-include gcmcbenchmarks/templates/cassandra/cas_setup1 *
+recursive-include gcmcbenchmarks/templates/cassandra/cas_setup2 *
+recursive-include gcmcbenchmarks/templates/cassandra/cas_setup3 *
+
+include gcmcbenchmarks/templates/towhee/twh_setup1/*
+include gcmcbenchmarks/templates/towhee/twh_setup2/*
+include gcmcbenchmarks/templates/towhee/twh_setup3/*
+
+include gcmcbenchmarks/templates/music/mus_setup1/*
+include gcmcbenchmarks/templates/music/mus_setup1_withgrid/*
+include gcmcbenchmarks/templates/music/mus_setup2/*
+include gcmcbenchmarks/templates/music/mus_setup2_withgrid/*
+include gcmcbenchmarks/templates/music/mus_setup3/*
+include gcmcbenchmarks/templates/music/mus_setup3_withgrid/*
+include gcmcbenchmarks/templates/music/atoms/*
+include gcmcbenchmarks/templates/music/molecules/*
+include gcmcbenchmarks/templates/music/pmaps_krista/*
+
+include gcmcbenchmarks/templates/raspa/rsp_setup1/*
+include gcmcbenchmarks/templates/raspa/rsp_setup2/*
+include gcmcbenchmarks/templates/raspa/rsp_setup3/*
+include gcmcbenchmarks/templates/raspa/rsp_setup1_withgrid/*
+include gcmcbenchmarks/templates/raspa/rsp_setup2_withgrid/*
+include gcmcbenchmarks/templates/raspa/rsp_setup3_withgrid/*
